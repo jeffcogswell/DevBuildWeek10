@@ -53,12 +53,12 @@ namespace BusinessDemo.Controllers
 			return Redirect("/business");
 		}
 
-		public IActionResult add()
+		public IActionResult addform()
 		{
 			return View();
 		}
 
-		public IActionResult add(Employee emp)
+		public IActionResult addemp(Employee emp)
 		{
 			DAL.InsertEmployee(emp);
 			return Redirect($"/business/department?dept={emp.department}");
