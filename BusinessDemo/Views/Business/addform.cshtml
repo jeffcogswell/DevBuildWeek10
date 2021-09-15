@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "addform";
+}
+
+<h1>Add New Employee</h1>
+
+<form method="post" action="/business/addemp">
+    First Name: <input type="text" name="firstname" /><br />
+    Last Name: <input type="text" name="lastname" /><br />
+    Phone: <input type="tel" name="phone" /><br />
+    Email: <input type="email" name="email" /><br />
+    Department: <input type="text" name="department" /><br />
+    <input type="submit" value="Save" />
+</form>

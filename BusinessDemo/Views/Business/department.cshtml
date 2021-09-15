@@ -1,0 +1,11 @@
+﻿@model List<Employee>
+@{
+    ViewData["Title"] = "department";
+}
+
+<h1>@ViewData["DeptName"]</h1>
+
+@foreach(Employee emp in Model)
+{
+    <div><a href="/business/employee?emp=@emp.id">@emp.firstname @emp.lastname</a></div>
+}

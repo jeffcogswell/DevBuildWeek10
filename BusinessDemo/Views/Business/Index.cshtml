@@ -1,0 +1,13 @@
+﻿@model List<Department>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Departments</h1>
+
+@foreach(Department dept in Model)
+{
+    <div><a href="/business/department?dept=@dept.id">@dept.name</a></div>
+}
+
+<a href="/business/addform" class="btn btn-primary">Add Employee</a>

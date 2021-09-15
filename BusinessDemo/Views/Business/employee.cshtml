@@ -1,0 +1,14 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "employee";
+}
+
+<h1>Employee</h1>
+
+<div>@Model.firstname @Model.lastname</div>
+<div>@Model.email</div>
+<div>@Model.phone</div>
+<div>@Model.department</div>
+
+<a href="/business/delete?id=@Model.id" class="btn btn-danger">Delete</a>
+<a href="/business/editform?empid=@Model.id" class="btn btn-primary">Edit</a>
